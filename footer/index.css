@@ -1,0 +1,127 @@
+#footer {
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    color: white;
+}
+#footer2 {
+    width: 95%;
+    height: 500px;
+    margin: auto;
+}
+p {
+    font-weight: bold;
+    font-size: 20px;
+}
+#subApp {
+    display: flex;
+    width: 100%;
+}
+#subscribe , #apps {
+    margin-left:3%;
+    margin-right: 3%;
+    height: 130px;
+    width: 100%;
+}
+#subscribe > div {
+    display: flex;
+    width: 700px;
+}
+
+input {
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    padding-right: 40px ;
+    width: 100%;
+}
+button {
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(249, 118, 159);
+    width: 20%;
+    cursor: pointer;
+}
+#apps > div {
+    display: flex;
+}
+#apps img {
+    width: 40%;
+    height: auto;
+    margin-top: 20px;
+}
+#infoLink { 
+    width: 100%; 
+    height: 130px; 
+    margin-top:3%;
+}
+#links a {
+    color: rgb(210, 210, 210);
+    font-weight: 5;
+    margin-right: 150px;
+    text-decoration: none;
+}
+#links {
+    margin-left: 3%;
+    font-size: 20px;
+}
+#footer1 > div {
+    width:20%; 
+    margin: auto; 
+    height: 150px;
+}
+#footer1 > div > img {
+    width: 40%;
+    margin-left: 25%;
+}
+#footer1 > div + div {
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer1  div + div img {
+    width: 80%;
+    height: 30px;
+
+}
+hr {
+    margin: 0% 3%;
+    margin-top: 20px;
+}
+
+hr + p {
+    font-weight: 10;
+    text-align: center;
+}
+#contacts {
+    display: flex;
+    margin-left: 3%;
+    justify-content: space-between;
+}
+
+#call >div > p:last-child {
+    font-weight: 10;
+}
+#call > div:first-child {
+    display: flex;
+}
+#call > div:first-child > img {
+    width: 5%;
+    margin-top: 0px;
+}
+#call > p {
+    margin-top:-10px;
+    font-weight: 10;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color : rgb(237, 235, 235);
+}
+#contacts > div:last-child {
+    margin-top: 20px;
+}
+#contacts > div:last-child > a {
+    color:white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+}
