@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#div1{
+    /* border: 1px solid red; */
+    width: 98%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  
+    padding: 10px;
+    align-items: center;
+    z-index: 1;
+
+}
+
+#div11{
+    margin-left: 40px;
+}
+#div12{
+    margin-right: 40px;
+}
+#div21{
+   
+    width: 60%;
+ 
+    display: flex;
+    justify-content:space-around;
+ 
+    padding: 10px;
+    /* z-index: 1; */
+
+}
+#div12{
+    width: 10%;
+    height: 30px;
+    display: flex;
+ 
+    justify-content: end;
+}
+.div1c{
+    width: 15%;
+    /* height: 30px; */
+    /* display: flex; */
+ 
+    /* justify-content: end; */
+}
+
+ #div12>p:nth-child(2){
+    margin-right: 30px;
+ }
+
