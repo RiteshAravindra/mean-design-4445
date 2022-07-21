@@ -18,9 +18,9 @@
     margin:0 auto;
     width: 90%; 
     height: 220px; 
-    box-shadow: 40px 0 40px -3px rgb(233, 6, 6), -40px 0 40px -3px rgb(250, 0, 0); 
-    -moz-box-shadow: 40px 0 40px -3px rgb(244, 7, 7), -40px 0 40px -3px rgb(235, 0, 0); 
-    -webkit-box-shadow: 40px 0 40px -3px rgb(255, 1, 1), -40px 0 40px -3px rgb(250, 1, 1);
+    box-shadow: 40px 0 40px -3px rgba(243, 167, 167, 0.443), -40px 0 40px -3px rgb(227, 148, 148); 
+    -moz-box-shadow: 40px 0 40px -3px rgba(241, 177, 177, 0.44), -40px 0 40px -3px rgb(230, 131, 131); 
+    -webkit-box-shadow: 40px 0 40px -3px rgba(229, 174, 174, 0.38), -40px 0 40px -3px rgb(238, 118, 118);
   
 }
 
