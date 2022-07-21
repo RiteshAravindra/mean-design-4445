@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Makeup</title>
     <link rel="stylesheet" href="./makeup.css/Makeupindex.css">
 </head>
 <body>
@@ -18,11 +18,33 @@
             <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt=""> <p>/</p><p>Makeup</p>
         </div>
     <div>
-       <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt=""> <p>Filter</p>
-        <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt=""> <p>Sort</p>
+
+        <div class="filimg">
+            <img  src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt=""> <p >Filter</p>
+        </div>
+       
+<div id="sortimg">
+    <img  src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt=""> <p>Sort</p>
+</div>
+   
+        
+        
+       
+     
+       
+       
     </div>
     </div>
-    
+    <div id="co">Makeup - <p id="count"></p></div>
+    <div id="">
+        <select name="" onchange="handlefilter()" class="sort">
+            <option value="All"> Select sorting</option>
+            <option value="HP"> Price - High to low</option>
+            <option value="LP"> Price - low to High</option>
+        </select>
+        
+    </div>
+   
 
     <div id="container"></div>
   

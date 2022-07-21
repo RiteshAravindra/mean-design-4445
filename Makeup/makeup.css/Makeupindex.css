@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 #div1 {
@@ -8,7 +9,7 @@
     width: 100%;
     background-color: white;
     text-align: center;
- 
+
 }
 
 #img1 {
@@ -57,6 +58,7 @@
  }
  #div2>div:nth-child(2)>img{
     margin-left: 70px;
+    
  }
  #div2>div:nth-child(1)>img{
     margin-left: 60px;
@@ -74,16 +76,19 @@
    
     margin-left: 4%;
     justify-content: space-evenly;
+
  }
 
 .box{
   
    width: 300px;
    background-color: white;
-   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   border: 0.3px solid rgb(247, 236, 236);
    line-height: 34px;
    margin-top: 20px;
    margin-left: 20px;
+   position: relative;
+  
    
 }
 
@@ -101,3 +106,83 @@
  }
 
  /* http://127.0.0.1:3000/api/Makeup */
+
+ .div1{
+   /* border: 1px solid red; */
+   padding: 5px;
+   /* position: absolute; */
+   width: 100%;
+   height: 40px;
+   padding: 0px;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   display: none;
+   
+  
+
+ }
+
+ .div1>img{
+   /* border: 1px solid green; */
+   position: absolute;
+   left: 0;
+   width: 13%;
+   height: 40px;
+   padding-left: 5px;
+   padding-right: 5px;
+
+  
+   
+
+ }
+
+ #btn{
+   /* border: 1px solid black; */
+   background-color: black;
+   color: white;
+   width: 88%;
+   height: 40px;
+   position: absolute;
+   right: 0;
+   border: 0px solid black;
+   
+   
+ }
+
+.rat{
+   z-index: 6;
+   margin-bottom: 40px;
+}
+.box:hover {
+   /* transform: scale(1.1); */
+   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.box:hover .div1 {
+   display: block;
+   border: 1px solid black;
+
+}
+
+.sort{
+     margin-left: 85.4%;
+ 
+
+}
+.filimg{
+   display: flex;
+   margin-right: 60px;
+}
+#sortimg{
+   display: flex;
+   justify-content: space-around;
+}
+
+#co{
+   margin-left: 5%;
+   display: flex;
+}
+
+
+
