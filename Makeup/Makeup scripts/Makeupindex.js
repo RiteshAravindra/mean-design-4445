@@ -1,3 +1,6 @@
+
+
+
 let data =[
     {
       "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
@@ -343,8 +346,8 @@ let data =[
 
   display(data)
 
-
-  function handlefilter(){
+document.querySelector(".sort").addEventListener("change",handlefilter)
+function handlefilter(){
     let selected= document.querySelector(".sort").value
   if(selected== "All") {
      display(data)
@@ -381,7 +384,7 @@ for(let i=0;i<datauser.length;i++){
 }
 
 let count=data.length
-let space= " "
+
 
 let total=document.getElementById("count")
 
