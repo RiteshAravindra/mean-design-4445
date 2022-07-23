@@ -12,6 +12,7 @@
     padding: 10px;
     justify-content: space-around;
     align-items: center;
+    z-index: 2000;
   }
   
   .px-1 {

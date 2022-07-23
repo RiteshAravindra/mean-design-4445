@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <style>
+    body {
+      background-color: #fba2c6;
+    }
+
+    p {
+      color: white;
+      text-align: center;
+      font-family: NotoSansRegular, sans-serif;
+    }
+
+    img {
+      display: block;
+    }
+
+    #part1 {
+      width: 18%;
+
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    form {
+      width: 100%;
+      /* border:2px solid white; */
+      margin: auto;
+    }
+
+    input {
+      width: 97%;
+      height: 25px;
+      margin-top: 30px;
+      background-color: transparent;
+      border: 0px;
+      border-bottom: 1px solid#87838b;
+      color: white;
+    }
+
+    span {
+      color: white;
+    }
+
+    button {
+
+      width: 97%;
+      /* height: 25px; */
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+      background-color: bisque;
+      border-radius: 7px;
+      font-size: 18px;
+      padding: 8px 0px 8px 0px;
+      cursor: pointer;
+    }
+
+    p:first-child {
+      font-weight: bold;
+    }
+
+    p:nth-child(1) {
+      margin-bottom: 30px;
+    }
+
+    p:nth-child(2) {
+      color:
+     white;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    #or {
+      width: 12%;
+      /* height: 20px; */
+      border: 0px solid #450948;
+      background-color: #450948;
+      /* background-color:#f8f8f8; */
+      border-radius: 100%;
+      text-align: center;
+      font-size: 15px;
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+      padding: 12px 0px 12px 0px;
+      /* display: inline; */
+    }
+
+    a {
+      text-decoration: none;
+      color: #a785ff;
+      font-size: 15px;
+    }
+
+    p:nth-child(3) {
+      font-size: 1px;
+    }
+
+    p:nth-child(4) {
+      font-size: 15px;
+    }
+
+    #term {
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+    #button2{
+      width: 100%;
+      margin-top: 15px;
+    }
+    #imgdiv{
+        /* width: ; */
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+      }
+  </style>
+</head>
+
+<body>
+  <div id="part1">
+    <form id="form1">
+      <p>Create a new account</p>
+    
+      <div id="imgdiv">
+        <a href=""><img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+        <a href=""><img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+        <a href=""><img src="https://www.zee5.com/images/fb-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+        <a href=""><img src="https://www.zee5.com/images/twitter-social-icon.svg?ver=2.51.66" alt="error"></a>
+    </div>  
+
+
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+
+      <button> Sign in</button>
+    </form>
+    <p id="or">or</p>
+    <form id="form2">
+      <input id="number" type="number" placeholder="Mobile Number">
+      <p id="term">By proceeding you agree to our <span><a href="">Terms of Service</a>& <a href="">Privacy
+            Policy.</a></span></p>
+      <button id="button2"> Sign in</button>
+      <p id="login"> Already registered? <a href="login.html">Login</a></p>
+    </form>
+
+    <!-- </div> -->
+  <p>Registering for this site allows you to access your order status and history. Just fill in the
+    fields below, and we'll get a new account set up for you in no time. We will only ask you
+    for information necessary to make the purchase process faster and easier</p>
+</body>
+
+</html>
+
+<script>
+  let form= document.querySelector("#form1");
+  let userdata=JSON.parse(localStorage.getItem("userdata"))|| []
+  form.addEventListener("submit",function(){
+     event.preventDefault()
+     let data={
+        //  name:form.name.value,
+         email:form1.email.value,
+         password:form1.password.value,
+     }
+     checkfeilds(data.email,data.password);
+ 
+   if(checkemail(data.email)==true){
+     userdata.push(data);
+     localStorage.setItem("userdata",JSON.stringify(userdata));
+   }
+   else{
+     alert("Account already exists");
+   }
+ 
+ 
+  })
+  function checkfeilds(email,password){
+ if(email==""||password==""){
+     alert("Please fill all the fileds")
+ }
+ }
+ 
+ 
+  function checkemail(email){
+     let filtered=userdata.filter(function(elem){
+        return email===elem.email;
+       
+     })
+ 
+     if(filtered.length>0){
+         return false;
+     } else{
+         return true;
+     }
+  }
+
+
+
+
+
+
+
+
+  let form2= document.querySelector("#form2");
+  // let userdata=JSON.parse(localStorage.getItem("userdata"))|| []
+  form2.addEventListener("submit",function(){
+     event.preventDefault()
+     let data={
+        //  name:form.name.value,
+       
+         number:form2.number.value,
+     }
+     checkfeildss(data.number);
+ 
+   if(checknum(data.number)==true){
+     userdata.push(data);
+     localStorage.setItem("userdata",JSON.stringify(userdata));
+   }
+   else{
+     alert("Account already exists");
+   }
+ 
+ 
+  })
+  function checkfeildss(number){
+ if(number==""){
+     alert("Please fill your mobile number")
+ }
+ }
+ 
+ 
+  function checknum(number){
+     let filtered=userdata.filter(function(elem){
+        return number===elem.number;
+       
+     })
+ 
+     if(filtered.length>0){
+         return false;
+     } else{
+         return true;
+     }
+  }
+ </script>

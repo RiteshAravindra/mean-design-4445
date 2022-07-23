@@ -13,7 +13,9 @@
     text-align: center;
 
 }
-
+#navbar{
+   position: relative;
+}
 #img1 {
     /* width: 90%;
     height: 220px;
@@ -89,8 +91,8 @@ margin-bottom: 20px;
    line-height: 34px;
    margin-top: 20px;
    margin-left: 20px;
-   position: relative;
-  
+   position: relative; 
+clear: both;
    
 }
 

@@ -190,3 +190,139 @@ coffee culter=[
       "id": 8
     }
   ]
+
+
+cirtus got real=[
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/373532210-artboard-1.jpg?v=1646149967",
+      "title": "Citrus Got Real Retinol Brightening Serum",
+      "price": "499",
+      "rating": "4.0",
+      "id": 1
+    },
+
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-cooling-stick-28037939429459.jpg?v=1644409181",
+      "title": "Citrus Got Real Cooling Stick",
+      "price": "399",
+      "rating": "4.6",
+      "id": 2
+    },
+  
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
+      "title": "Citrus Got Real Daily Moisturizer",
+      "price": "499",
+      "rating": "4.9",
+      "id": 3
+    },
+  
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-spf30-sunscreen-28038344736851.jpg?v=1619155723",
+      "title": "Citrus Got Real SPF30 Sunscreen",
+      "price": "399",
+      "rating": "4.7",
+      "id": 4
+    }
+ 
+  ]
+
+
+
+  aquaholic range=[
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/Hydrating-Primer-3.jpg?v=1626423647",
+      "title": "Aquaholic Hydrating Primer",
+      "price": "699",
+      "rating": "4.9",
+      "id": 1
+    },
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
+      "title": "Aquaholic Instant Pore Cleansing Mask",
+      "price": "499",
+      "rating": "4.8",
+      "id": 2
+    },
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Pore-Exfoliating-Scrub-3_1.jpg?v=1626363966",
+      "title": "Aquaholic Pore Exfoliating Scrub",
+      "price": "399",
+      "rating": "4.9",
+      "id": 3
+    },
+
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/Aquaholic-Extention-Spot-gel-2.jpg?v=1626363976",
+      "title": "Aquaholic Clarifying Spot Gel",
+      "price": "399",
+      "rating": "4.7",
+      "id": 4
+    }
+ 
+  ]
+
+
+  mask= [
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-bubble-mask-12775750500435.jpg?v=1644399394",
+      "title": "Charcoal Patrol Bubble Mask",
+      "price": "149",
+      "rating": "4.9",
+      "id": 1
+    },
+   
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-anti-aging-mask-12775753744467.jpg?v=1619113715",
+      "title": "Cheat Sheet Anti-Aging Mask",
+      "price": "99",
+      "rating": "4.8",
+      "id": 2
+    },
+  
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-cheat-sheet-clarifying-mask-12775754203219.jpg?v=1619113702",
+      "title": "Cheat Sheet Clarifying Mask",
+      "price": "99",
+      "rating": "4.9",
+      "id": 3
+    },
+
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/Instant-Pore-Cleansing-Mask-1_1.jpg?v=1626423690",
+      "title": "Aquaholic Instant Pore Cleansing Mask",
+      "price": "499",
+      "rating": "4.8",
+      "id": 4
+    },
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/1_3cb613fc-43c8-4763-b3e6-5ccf4761c0d5.jpg?v=1641570994",
+      "title": "Power Clay Mask Stick",
+      "price": "699",
+      "rating": "4.8",
+      "id": 5
+    },
+  
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/CCPorePurifyingMaskWBG-3.jpg?v=1628610298",
+      "title": "Coffee Culture Pore Purifying Mask",
+      "price": "499",
+      "rating": "4.8",
+      "id":6
+    },
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-charcoal-patrol-face-mask-12775752564819.jpg?v=1619113688",
+      "title": "Charcoal Patrol Face Mask",
+      "price": "99",
+      "rating": "4.9",
+      "id": 7
+    },
+    {
+      "img": "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-sugar-cheat-sheet-brightening-mask-12775754039379.jpg?v=1619113729",
+      "title": "SUGAR Cheat Sheet Brightening Mask",
+      "price": "149",
+      "rating": "4.9",
+      "id": 8
+    }
+    
+  ]

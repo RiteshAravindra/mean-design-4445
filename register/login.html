@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color:#fba2c6;
+        }
+        /* input{
+        width: 97%;
+        height: 25px;
+        margin-top: 30px;
+        background-color: transparent;
+        border: 0px ;
+        border-bottom: 1px  solid#87838b;
+      } */
+        p{
+        color: white;
+        text-align: center;
+        font-family: NotoSansRegular,sans-serif;
+      }
+      img{
+        display: block;
+      }
+      #imgdiv{
+        /* width: ; */
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+      }
+      #part1{
+        width: 20%;
+        /* border:2px solid white; */
+        margin: auto;
+        margin-top: 100px;
+      }
+      form{
+        width: 100%;
+        /* border:2px solid white; */
+        margin: auto;
+      }
+      #or{
+        width: 12%;
+        /* height: 20px; */
+        border: 0px solid #450948;
+        background-color:#450948;
+        /* background-color:#f8f8f8; */
+        border-radius: 100%;
+        text-align: center;
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        margin-top: 25px;
+        padding: 12px 0px 12px 0px;}
+        button{
+     
+     width: 97%;
+     /* height: 25px; */
+     display: block;
+     margin: auto;
+     margin-top: 25px;
+     background-color: bisque;
+     border-radius: 7px;
+     font-size: 18px;
+     padding: 8px 0px 8px 0px;
+     cursor: pointer;
+   }
+   input{
+        width: 97%;
+        height: 25px;
+        margin-top: 30px;
+        background-color: transparent;
+        border: 0px ;
+        border-bottom: 1px  solid#87838b;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color:#a785ff;
+        font-size: 15px;
+      }
+      p:nth-child(2){
+        color:
+white;
+        font-weight:100;
+        margin-bottom: 40px;
+      }
+      p:first-child{
+        font-weight: bold;
+      }
+      p:nth-child(1){
+        margin-bottom: 30px;
+      }
+   #sign{
+    font-size: 14px;
+   }
+    </style>
+</head>
+<body>
+    <div id="part1">
+      <form id="form1"> 
+    <p>LOGIN</p>
+    <!-- <p>Login to continue enjoying uninterrupted video and personalised experience.</p> -->
+   <div id="imgdiv">
+    <a href=""><img src="https://www.zee5.com/images/apple-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+    <a href=""><img src="https://www.zee5.com/images/google-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+    <a href=""><img src="https://www.zee5.com/images/fb-social-icon-circle.svg?ver=2.51.66" alt="error"></a>
+    <a href=""><img src="https://www.zee5.com/images/twitter-social-icon.svg?ver=2.51.66" alt="error"></a>
+</div>  
+
+        
+
+            <input id="email" type="email" placeholder="Email">
+            <input id="password" type="password" placeholder="Password">
+
+            
+             <p id="term"><span> <a href="">Forgot Password?</a></span></p>
+             <button id="login1">Login</button>
+            <p id="or">or</p>
+</form>
+         <form id="form2">
+            <input id="number" type="number" placeholder="mobile Number">
+            <button id="login2">Login</button>
+          <p id="sign">Go to <a href="register.html">Register</a></p>
+        </form>
+        
+      </div>
+
+</body>
+</html>
+
+<script>
+  let form=document.querySelector("#form1");
+  let userdata=JSON.parse(localStorage.getItem("userdata"))|| []
+  form.addEventListener("submit", function(event){
+           event.preventDefault();
+      let data={
+          email:form.email.value,
+          password:form.password.value
+      }
+      if(checklogin(data.email,data.password)==true){
+         localStorage.setItem("login",JSON.stringify(data));
+         alert("Login Successfully");
+         window.location.href = 'index.html';
+      } else{
+          alert("Wrong Username or password")
+      }
+  })
+  
+  
+  function checklogin(email,password){
+  let filtered=userdata.filter(function(elem){
+      return elem.email===email && elem.password===password;
+      // if(filtered.length)
+  })
+  if(filtered.length>0){
+      return true;
+  } else{
+      return false;
+  }
+  }
+
+
+
+
+  let form1=document.querySelector("#form2");
+  // let userdata=JSON.parse(localStorage.getItem("userdata"))|| []
+  form1.addEventListener("submit", function(event){
+           event.preventDefault();
+      let data={
+       
+          number:form1.number.value,
+      }
+      if(checkloginn(data.number)==true){
+         localStorage.setItem("login",JSON.stringify(data));
+         alert("Login Successfully");
+         window.location.href = 'mainpage.html';
+      } else{
+          alert("Mobile Number Not Found")
+      }
+  })
+  
+  
+  function checkloginn(number){
+  let filtered=userdata.filter(function(elem){
+      return elem.number===number ;
+      // if(filtered.length)
+  })
+  if(filtered.length>0){
+      return true;
+  } else{
+      return false;
+  }
+  }
+  </script>
