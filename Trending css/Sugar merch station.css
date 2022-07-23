@@ -56,7 +56,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
-    width: 90%;
+    width: 70%;
     margin: auto;
     /* border: 1px solid black; */
     justify-content: space-between;

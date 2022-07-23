@@ -57,7 +57,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 30px;
-    width: 90%;
+    width: 70%;
     margin: auto;
     /* border: 1px solid black; */
     justify-content: space-between;
@@ -388,3 +388,15 @@
       -webkit-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0);
     
   }
+  #pop{
+    /* background-color: black; */
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: baseline;
+    height: 30px;
+    width: 300px;
+    margin-left: -40px;
+    margin-top: 20px;
+    /* margin-bottom: -0px; */
+  }
+  

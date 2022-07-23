@@ -68,13 +68,36 @@ let data =[
 
 ]
 
-
+document.querySelector(".sort").addEventListener("change",handlefilter)
+function handlefilter(){
+  let selected=document.querySelector(".sort").value
+  if(selected=="All"){
+    append(data)
+    // console.log(data)
+  }else if(selected=="HP"){
+    data.sort(function(a,b){
+      return b.price-a.price
+    })
+    append(data)
+    // console.log(data)
+  }
+  else if(selected=="LP"){
+    data.sort(function(a,b){
+      return a.price-b.price
+    })
+    append(data)
+    // console.log(data)
+  }
+}
 
 function append(data){
     let length= document.getElementById("length")
     let products= document.getElementById("products")
+    products.innerText=""
     length.innerText="Value Sets  -  "+data.length+" items"
+
     data.forEach(function(el){
+      
         // console.log("inside function")
         let div= create('div')
         // div.style.backgroundColor="red"
@@ -141,11 +164,11 @@ function outElem(div){
   // div.innerText=""
   // div.innerText=append(div)
 }
-function sort(){
-  let sort= document.getElementById('sort')
-  let div = document.createElement('div')
-  let select= document.createElement('select')
-  select.innerText="hie"
-  div.append(select)
-  sort.append(div)
-}
+// function sort(){
+//   let sort= document.getElementById('sort')
+//   let div = document.createElement('div')
+//   let select= document.createElement('select')
+//   select.innerText="hie"
+//   div.append(select)
+//   sort.append(div)
+// }

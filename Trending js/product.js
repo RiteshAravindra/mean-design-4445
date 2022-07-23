@@ -64,5 +64,5 @@ cart.addEventListener("click", function(){
     // console.log(productData)
     localStorage.setItem("cart",JSON.stringify(productData));
     // console.log(JSON.parse(localStorage.getItem('cart')))
-    // window.location.href="cart.html"
+    window.location.href="cart.html"
 })
