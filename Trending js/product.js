@@ -1,5 +1,6 @@
 let productData = JSON.parse(localStorage.getItem('product'))
 let display=document.getElementById('display')
+document.getElementById('tittle').innerText=productData.title
 // console.log(productData)
 let att= document.getElementById('att')
 att.innerText=productData.title
@@ -64,5 +65,5 @@ cart.addEventListener("click", function(){
     // console.log(productData)
     localStorage.setItem("cart",JSON.stringify(productData));
     // console.log(JSON.parse(localStorage.getItem('cart')))
-    window.location.href="cart.html"
+    window.location.href=""
 })
