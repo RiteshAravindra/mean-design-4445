@@ -126,7 +126,7 @@ white;
             <button id="login2">Login</button>
           <p id="sign">Go to <a href="register.html">Register</a></p>
         </form>
-        
+        <a href=""></a>
       </div>
 
 </body>
@@ -144,7 +144,7 @@ white;
       if(checklogin(data.email,data.password)==true){
          localStorage.setItem("login",JSON.stringify(data));
          alert("Login Successfully");
-         window.location.href = 'index.html';
+         window.location.href = '/landing/index.html';
       } else{
           alert("Wrong Username or password")
       }
@@ -177,7 +177,7 @@ white;
       if(checkloginn(data.number)==true){
          localStorage.setItem("login",JSON.stringify(data));
          alert("Login Successfully");
-         window.location.href = 'mainpage.html';
+         window.location.href = '/landing/index.html';
       } else{
           alert("Mobile Number Not Found")
       }

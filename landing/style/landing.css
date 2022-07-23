@@ -361,10 +361,14 @@ iframe{
 }
 #bestseller
 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,300px);
-    gap: 10px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(1,250px);
+  gap: 20px;
+  margin-left: 7%;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 #bestseller>div>img{
     width: 100%;
@@ -378,10 +382,13 @@ btn{
 }
 #supersaver
 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,300px);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(1,250px);
+  gap: 20px;
+  margin-left: 7%;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 #supersaver>div>img{
     width: 100%;
@@ -392,10 +399,13 @@ btn{
 }
 #gifting
 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,300px);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(1,250px);
+  gap: 20px;
+  margin-left: 7%;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 #gifting>div>img{
     width: 100%;
@@ -406,10 +416,13 @@ btn{
 }
 #just
 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,300px);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,300px);
+  grid-template-rows: repeat(1,250px);
+  gap: 20px;
+  margin-left: 7%;
+  line-height: 60px;
+  margin-bottom: 30px;
 }
 #just>div>img{
     width: 100%;
@@ -433,9 +446,12 @@ video{
 #basics
 {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,300px);
-    gap: 10px;
+    grid-template-columns: repeat(4,300px);
+    grid-template-rows: repeat(1,250px);
+    gap: 20px;
+    margin-left: 7%;
+    line-height: 60px;
+    margin-bottom: 30px;
 }
 #basics>div>img{
     width: 100%;

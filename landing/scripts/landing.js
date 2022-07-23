@@ -99,7 +99,7 @@ let hotdeal = [
       j++;
       k++;
       slidingshow.append(indi1, indi2,indi3);
-    }, 10000);
+    }, 5000);
   }
   hotdeals();
 // Hot Deals End
@@ -177,7 +177,7 @@ let toppick = [
       j++;
       k++;
       slidingshow.append(indi1, indi2,indi3);
-    }, 10000);
+    }, 3000);
   }
   topick();
 // top pic end
@@ -225,7 +225,7 @@ let bloglink = [
       j++;
       k++;
       slidingshow.append(indi1, indi2,indi3);
-    }, 10000);
+    }, 4000);
   }
   blogdis();
 // sugar blog end
@@ -445,7 +445,7 @@ function bestsell() {
     k++;
     l++;
     best.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 3000);
 }
 bestsell();
 // bestseller ends
@@ -664,7 +664,7 @@ function saver() {
     k++;
     l++;
     best.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 2000);
 }
 saver();
 // supersaver ends
@@ -883,7 +883,7 @@ function gift() {
     k++;
     l++;
     best.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 2000);
 }
 gift();
 // gifting js end
@@ -1102,7 +1102,7 @@ function justing() {
     k++;
     l++;
     best.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 2000);
 }
 justing();
 // justin ends
@@ -1320,7 +1320,7 @@ function basicskin() {
     k++;
     l++;
     best.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 2000);
 }
 basicskin();
 // skincare basics end
@@ -1349,13 +1349,12 @@ function explore() {
   let indi4 = document.createElement("div");
 
   let image = document.createElement("img");
-  
   let image2 = document.createElement("img");
   let image3 = document.createElement("img");
   let image4 = document.createElement("img");
  
   setInterval(function () {
-    if (exploredata.length <= k) {
+    if (exploredata.length <= l) {
       i = 0;
       j = 1;
       k= 2;
@@ -1377,7 +1376,7 @@ function explore() {
     k++;
     l++;
     slidingshow.append(indi1, indi2,indi3,indi4);
-  }, 10000);
+  }, 3000);
 }
 explore();
 
