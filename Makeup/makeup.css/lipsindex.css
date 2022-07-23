@@ -1,23 +1,12 @@
-
-#img1 {
-   /* width: 90%;
-   height: 220px;
-   box-shadow: 60px 0 90px 5px rgb(13, 1, 1), -60px 0 80px 5px rgb(14, 2, 2); */
-   margin:0 auto;
-   width: 90%; 
-   height: 220px; 
-   box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
-   -moz-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
-   -webkit-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0);
- 
-}
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
+#navbar{
+  position: relative;
+  }
+ 
 #div1 {
   /* border: 1px solid rebeccapurple; */
   margin-top: 50px;
@@ -91,6 +80,7 @@
   margin-top: 30px;
   margin-left: 4%;
   justify-content: space-evenly;
+  clear: both;
 
 }
 
@@ -103,6 +93,7 @@
  margin-top: 20px;
  margin-left: 20px;
  position: relative;
+ clear: both;
 
  
 }
@@ -215,6 +206,7 @@
  padding: 10px;
  justify-content: space-around;
  align-items: center;
+ z-index: 2000;
 }
 
 .px-1 {
@@ -303,7 +295,7 @@
 
 #header {
  
- position: sticky;
+ 
  top: 0;
  left: 0;
  right: 0;
@@ -344,17 +336,23 @@
  left: 0;
  width: 200px;
  display: none;
+ z-index: 1000;
 }
 #header .navbar ul li ul li{
  width: 100%;
+ 
+ position:initial;
+ z-index: 1000;
 }
 #header .navbar ul li ul li ul {
  left: 115px;
  top: 0;
+ z-index: 1000;
 }
 #header .navbar ul li:hover > ul {
- display: block;
+ display: initial;
  background-color: white;
+ z-index: 1000;
 }
 
 
@@ -488,3 +486,17 @@ hr + p {
  font-size: 19px;
  font-weight: bold;
 }
+#img1 {
+   /* width: 90%;
+   height: 220px;
+   box-shadow: 60px 0 90px 5px rgb(13, 1, 1), -60px 0 80px 5px rgb(14, 2, 2); */
+   margin:0 auto;
+   width: 90%; 
+   height: 220px; 
+   box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
+   -moz-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
+   -webkit-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0);
+ 
+}
+
+

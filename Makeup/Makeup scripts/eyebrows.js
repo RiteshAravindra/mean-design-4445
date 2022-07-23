@@ -50,6 +50,7 @@ let data =[
     }
   ]
 
+ 
   function display (data){
     let container= document.getElementById("container")
     container.innerHTML=""
@@ -96,11 +97,65 @@ let data =[
             datauser.push(element)
             localStorage.setItem("Orderlist" , JSON.stringify(datauser));
             alert("Item Added Successfully");
-            window.location.href="Addtocart.html";
+            location.href="/Makeup/addtocart.html";
         }else{
             alert("Item Already Added");
-            window.location.href="Addtocart.html";
+            location.href="/Makeup/addtocart.html";
         }
+         
+      })
+ 
+         container.append(div)
+ 
+     })
+   }
+ 
+   display(data)
+ 
+ document.querySelector(".sort").addEventListener("change",handlefilter)
+ function handlefilter(){
+     let selected= document.querySelector(".sort").value
+   if(selected== "All") {
+      display(data)
+      
+   }
+   else if(selected=="HP"){
+      data.sort(function(a,b){
+        return b.price-a.price
+      
+      })
+      display(data)
+     
+   }
+   else if(selected=="LP") {
+      data.sort(function(a,b){
+         return a.price-b.price
+          
+          })
+          display(data)
+          
+   }
+      
+   }
+ 
+ 
+   let datauser=JSON.parse(localStorage.getItem("Orderlist")) || []
+ function addtocart(naam){
+ for(let i=0;i<datauser.length;i++){
+    if(datauser[i].name===naam){
+       return false
+    }
+ }return true
+    
+ }
+ 
+ let count=data.length
+ 
+ 
+ let total=document.getElementById("count")
+ 
+ total.innerHTML= `${count}`+" items"
+ total.style.color="grey"
          
       })
  

@@ -79,6 +79,7 @@ let data =[
   ]
 
 
+ 
   function display (data){
     let container= document.getElementById("container")
     container.innerHTML=""
@@ -125,10 +126,10 @@ let data =[
             datauser.push(element)
             localStorage.setItem("Orderlist" , JSON.stringify(datauser));
             alert("Item Added Successfully");
-            window.location.href="Addtocart.html";
+            location.href="/Makeup/addtocart.html";
         }else{
             alert("Item Already Added");
-            window.location.href="Addtocart.html";
+            location.href="/Makeup/addtocart.html";
         }
          
       })

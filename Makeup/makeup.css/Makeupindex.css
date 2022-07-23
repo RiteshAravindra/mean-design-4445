@@ -203,6 +203,7 @@
   padding: 10px;
   justify-content: space-around;
   align-items: center;
+  z-index: 2000;
 }
 
 .px-1 {
@@ -291,7 +292,7 @@
 
 #header {
   
-  position: sticky;
+  
   top: 0;
   left: 0;
   right: 0;
@@ -493,4 +494,9 @@ hr + p {
     -moz-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
     -webkit-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0);
   
+}
+
+
+#navbar{
+ position: sticky;
 }

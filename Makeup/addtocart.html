@@ -1,0 +1,310 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TO CART</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+   #top{
+     border: 1px solid ;width: 100%;height: 30px;display: flex;margin: auto;justify-content: space-evenly;
+     align-items: center;
+   }
+
+   #top>div:nth-child(1){
+    width: 20%;height: 80%;font-size: 13px;display: flex;align-items: center;font-weight:bold ;
+   }
+   #top>div:nth-child(2){
+    width: 30%;height: 80%;font-size: 13px;display: flex;align-items: center;font-weight:bold ;
+   }
+   #top>div:nth-child(3){
+    width: 20%;height: 80%;font-size: 13px;display: flex;align-items: center;font-weight:bold ;
+   }
+
+   #sec{
+    width: 100%;height: 60px; display: flex;margin: auto;justify-content: space-evenly;
+    align-items: center;
+   }
+   #sec>div:nth-child(1){
+    width: 30%;height: 80%;display: flex;justify-content: center;align-items: center;
+    font-weight: bold;justify-content: space-evenly;
+   }
+
+   #sec>div:nth-child(2){
+     width: 30%;height: 100%;display: flex;justify-content: center;
+    align-items: center;
+   }
+   #sec>div:nth-child(2)>img{
+    width: 30%;height: 100%;
+   }
+   #sec>div:nth-child(3){
+     width: 20%;height: 80%;display: flex;justify-content: center;align-items: center;
+    justify-content: space-around;
+   }
+
+   h1{
+    text-align: center;font-size: 23px;font-weight: bold;
+   }
+
+   #three{
+    width: 100%;height: 80px;margin: auto;display: flex;justify-content: space-between;
+   }
+   #three>div:nth-child(1){
+    width: 20%;height: 80%;margin-left: 50px;display: flex;
+    align-items: center;justify-content: center;font-weight: bold;
+   }
+   #three>div:nth-child(2){
+    width: 60%;height: 80%;display: flex;justify-content: space-evenly;
+   }
+   #three>div:nth-child(2)>div:nth-child(1){
+    width: 30%;height: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-evenly;background-color: rgb(243, 196, 108);
+   }
+   #three>div:nth-child(2)>div:nth-child(1)>img{
+    width: 25%;height: 40%;
+   }
+   #three>div:nth-child(2)>p{
+     display: flex;align-items: center;
+   }
+   #three>div:nth-child(2)>div:nth-child(3){
+    width:50% ;height: auto;display: flex;justify-content: center;align-items: center;
+    background-color: black;color: white;
+   }
+
+   #heading{
+    margin-left: -700px;
+   }
+
+   #four{
+    width: 100%;margin-top: 10px;
+   }
+   #four>div{
+    width: 100%;display: flex;justify-content: space-around;
+   }
+   #four>div>img{
+    width: 80px;
+   }
+   #four>div>button{
+   height: 40px; width: 110px;background-color: red;color: white;
+   }
+  
+
+   #five{
+    height: 60px;width: 85%;margin: auto; background-color: rgb(230, 219, 219);display: flex;
+    align-items: center;font-weight: bold;padding-left: 80px;
+   
+   }
+
+   #six{
+    height: 60px;width: 92%;margin: auto;background-color: rgb(255, 255, 91);display: flex;
+    align-items: center;font-weight: bold;text-align: center;margin-top: 30px;
+   }
+   #seven{
+    height: auto;width: 30%;margin-top: 20px;margin-left: 70px;font-weight: bold;font-size: 25px;
+   }
+
+   #eight{
+    width: 350px;height: 80px;margin-left: 70px;margin-top: 20px;
+   }
+   #eight>div:nth-child(1){
+   width: 210px;height: auto; background-color:  rgb(255, 255, 52);
+   font-weight: bold;
+   }
+   #eight>p+p{
+    color: teal;margin-top: 5px;
+   }
+
+   #nine{
+    width: 200px;height: 60px;margin-left: 70px;margin-top: 20px;
+   }
+   #nine>div{
+    font-weight: bold;
+   }
+
+   #ten{
+    width: 86%;height: auto;margin-left: 70px;
+   }
+
+   #eleven{
+    border: 1px solid green;width: 40%;height: 100px;margin-top: 20px;margin-left: 70px;
+    display: flex;
+   }
+   #eleven>div>h3{
+   margin-left: 10px;
+   }
+   #eleven>div>p{
+    width: 85%;height: auto;margin-top: 10px;margin-left: 10px;
+   }
+
+   #twelve{
+    border: 1px solid transparent;width: 90%;height: 2px; background-color: silver;margin: auto;margin-top: 20px;
+   }
+
+   #thirteen{
+    width: 90%;height: 50px;background-color: silver;margin: auto;margin-top: 20px;
+    display: flex;justify-content: center;align-items: center;
+    justify-content: space-between;
+   }
+
+   .fourteen{
+    width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-between;
+   }
+
+   #fifteen{
+    width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-between;
+   }
+
+   #sixteen{
+    width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-between;
+   }
+   /* #seventeen{
+    width: 90%;height: 40px;margin: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-between;
+   } */
+
+   #line{
+    border: 1px solid black;width: 90%;height: auto;margin: auto;
+   }
+
+
+   #eighteen{
+    width: 100%;height: 80px;margin: auto;display: flex;justify-content: space-between;margin-top: 20px;
+   }
+   #eighteen>div:nth-child(1){
+    width: 20%;height: 80%;margin-left: 50px;display: flex;
+    align-items: center;justify-content: center;font-weight: bold;
+   }
+   #eighteen>div:nth-child(2){
+    width: 60%;height: 80%;display: flex;justify-content: space-evenly;
+   }
+   #eighteen>div:nth-child(2)>div:nth-child(1){
+    width: 30%;height: auto;display: flex;justify-content: center;
+    align-items: center;justify-content: space-evenly;background-color: rgb(243, 196, 108);
+   }
+   #eighteen>div:nth-child(2)>div:nth-child(1)>img{
+    width: 25%;height: 40%;
+   }
+   #eighteen>div:nth-child(2)>p{
+     display: flex;align-items: center;
+   }
+   #eighteen>div:nth-child(2)>div:nth-child(3){
+    width:50% ;height: auto;display: flex;justify-content: center;align-items: center;
+    background-color: black;color: white;
+   }
+  
+.payment>a{
+    text-decoration: none;
+    color: white;
+
+    
+}
+#fir{
+    padding: 20px;
+    color: rgba(255, 0, 255, 0.719);
+}
+#three>div{
+    padding: 40px;
+}
+    </style>
+</head>
+<body>
+   
+
+   
+   <h1 id="fir">Sugarcosmatics</h1>
+    <h1>SHOPPING BAG</h1>
+
+    <div id="three">
+        <div>BACK TO SHOPPING</div>
+        
+        <div>
+          
+          <div class="payment"><a href="payment.html">PROCEED WITH YOUR ORDER ></a> </div>  
+        </div>
+    </div>
+
+    <h1 id="heading"><span>1</span> <span>|</span> <span>ITEMS ADDED TO YOUR SHOPPING BAG</span></h1>
+
+    <div id="four">
+        
+    </div>
+
+    <div id="five">⚪ BUYING A GIFT?</div>
+
+    <div id="six">FREE STANDARD SHIPPING ON ORDERS OVER $100</div>
+
+    <div id="seven"><span>2</span> <span>|</span> <span> SELECT SHIPPING METHOD</span></div>
+
+    <div id="eight">
+        
+        <div><input type="radio"> <span>STANDARD -</span> <span style="text-decoration: line-through;">$ 9.95</span> <span>FREE</span></div>
+        <p>12-15 business days</p>
+        <p>6 times less CO2 emissions than Express shipping</p>
+    </div>
+
+    <div id="nine">
+        <div><input type="radio"><span>EXPRESS - $ 19.95</span></div>
+        <p>2-4 business days</p>
+    </div>
+
+    <div id="ten">Most products ship from our warehouse in Italy. Due to the time difference between North America and Europe, delivery time will start one business day after your order is placed. <span style="font-weight: bold;">Click here to see the days on which we do not ship.</span></div>
+
+    <div id="eleven">
+    <div>
+        <h3>ECOBOX</h3>
+        <p>Sugarcosmatics’s packaging is made entirely from recyclable materials and is internationally certified by RESY, FSC, PEFC and SFI for environmental, social and economic sustainability.</p>
+    </div>
+    </div>
+
+    <div id="twelve"></div>
+
+    <div id="thirteen">
+        <div><span style="font-weight: bold; margin-left: 10px;margin-right: 5px;">SugarcosmaticsCODE</span> <span>Use your personal SugarcosmaticsCODE to access exclusive promotions</span> </div>
+        <div><span style="margin-right: 5px;font-weight: bold;">ENTER YOUR CODE</span> <span style="margin-right: 10px;font-size: 25px;font-weight: bold;">+</span> </div>
+    </div>
+
+    <div class="fourteen">
+        <h2>TOTAL FOR ITEMS</h2>
+        <h3></h3>
+    </div>
+
+    <div id="fifteen">
+        <h2>SHIPPING</h2>
+        <h3>Free</h3>
+    </div>
+
+    <!-- <div id="sixteen">
+        <h2>PAYMENT</h2>
+        <h3>Free</h3>
+    </div> -->
+
+    <div class="fourteen">
+        <h2>ORDER TOTAL</h2>
+        <h3>0</h3>
+    </div>
+
+    <div id="line"></div>
+
+    <div id="eighteen">
+        <div>BACK TO SHOPPING</div>
+        
+        <div>
+          <div><img src="https://www.yoox.com/media/yoox16/logos/paypal_logo_txt.png?v=1" alt="error"> <p>CHECK OUT</p> </div>
+          <p>or</p>
+          <div class="payment"><a href="payment.html">PROCEED WITH YOUR ORDER ></a> </div>  
+        </div>
+    </div>
+</body>
+</html>
+<script src="./Makeup scripts/addtocart.js"></script>
