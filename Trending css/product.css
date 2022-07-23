@@ -353,7 +353,7 @@
     
   }
   #display{
-    width: 70%;
+    width: 90%;
     margin: auto;
     /* border: 1px solid black; */
     /* display: flex; */
@@ -367,7 +367,7 @@
     height: fit-content;
   }
   #largeDiv>img{
-    height: 600px;
+    height: 400px;
     width: 270px;
     
   }

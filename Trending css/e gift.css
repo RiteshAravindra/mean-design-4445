@@ -71,7 +71,7 @@
 }
 .product{
     height: 450px;
-    width: 300px;
+    width: 250px;
     background-color: white;
     box-sizing: border-box;
     padding: 40px;
@@ -394,7 +394,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: baseline;
     height: 30px;
-    width: 300px;
+    width: 250px;
     margin-left: -40px;
     margin-top: 20px;
     /* margin-bottom: -0px; */

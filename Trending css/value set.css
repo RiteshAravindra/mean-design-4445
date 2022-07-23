@@ -81,7 +81,7 @@
 }
 .product{
     height: 450px;
-    width: 300px;
+    width: 250px;
     background-color: white;
     box-sizing: border-box;
     padding: 40px;
@@ -398,4 +398,15 @@
       -moz-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0); 
       -webkit-box-shadow: 40px 0 40px -3px rgb(0, 0, 0), -40px 0 40px -3px rgb(0, 0, 0);
     
+  }
+  #pop{
+    /* background-color: black; */
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: baseline;
+    height: 30px;
+    width: 250px;
+    margin-left: -40px;
+    margin-top: 20px;
+    /* margin-bottom: -0px; */
   }

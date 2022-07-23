@@ -110,11 +110,20 @@ function append(data){
         let price= create('p')
         price.innerText="Rs."+el.price
         let centre=create('center')
+        let pop = create('div')
+        pop.setAttribute("id",'pop')
+        // pop.addEventListener("click",function(el){
+        //   localStorage.setItem("cart",JSON.stringify(productData))
+        //   alert ("Item Added To Cart")
+        // })
+        let text= create('p')
+        let center=create('center')
+        center.append(text)
         div.addEventListener("mouseover", function(){
-          overElem(div)
+          overElem(div,center,pop)
         })
         div.addEventListener("mouseout", function(){
-          outElem(div)
+          outElem(div,center,pop)
         })
         div.addEventListener("click", function(){
           // console.log(el)
@@ -133,19 +142,34 @@ append(data)
 function create(id){
     return document.createElement(id)
 }
-function overElem(div){
-    div.style.boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
-    let pop = create('div')
-    // let text= create('p')
-    // text.innerText="Add To Cart"
-    // pop.append(text)
-    // div.append(pop)
-    // console.log("hi")
+function overElem(div,center,pop){
+  div.style.boxShadow= "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset"
+    center.innerText="Add To Cart"
+    pop.append(center)
+    pop.style.backgroundColor="black"
+    div.append(pop)
     
-    
+  
+  
+  // pop.append(text)
+  // div.append(pop)
+  // console.log("hi")
+  // div.addEventListener("mouseover", function(){
+  //   // let pop = create('div')
+  //   // let text= create('p')
+  //   // text.innerText="Add To Cart"
+  //   pop.append(text)
+  //   div.append(pop)
+  // })
+  // div.addEventListener("mouseout", function(){
+  //   pop.innerText=""
+  // })
+  
 }
-function outElem(div){
-  div.style.boxShadow=""
-  // div.innerText=""
-  // div.innerText=append(div)
+function outElem(div,center,pop){
+div.style.boxShadow=""
+center.innerText=""
+// center.style.color="white"
+// pop.style.display="none"
+pop.style.backgroundColor="white"
 }
