@@ -1,6 +1,6 @@
 brushdata=[
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
 title:"Blend Trend Face Brush - 006 Highlighter",
 price:"399",
 rating:"4.7(23)",
@@ -8,7 +8,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-003Contour.jpg?v=1627659996",
 title:"Blend Trend Face Brush - 003 Contour",
 price:"399",
 rating:"4.5(13)",
@@ -16,7 +16,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-5-min.jpg?v=1627573639",
 title:"Blend Trend Dual Eyeshadow Brush - 412 Flat + Round",
 price:"599",
 rating:"5.0(2)",
@@ -24,7 +24,7 @@ cat:"brushes",
 subcat:"eyebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-13.jpg?v=1627659977",
 title:"Blend Trend Dual Eyeshadow Brush - 413 Flat + Round Xl",
 price:"599",
 rating:"5.0(2)",
@@ -32,7 +32,7 @@ cat:"brushes",
 subcat:"eyebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-12-min.jpg?v=1627573647",
 title:"Blend Trend Dual Face Brush - 075 Powder + Foundation",
 price:"599",
 rating:"4.8(42)",
@@ -40,7 +40,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-2-min.jpg?v=1627573652",
 title:"Blend Trend Eyeshadow Brush - 041 Flat",
 price:"399",
 rating:"5.0(3)",
@@ -48,7 +48,7 @@ cat:"brushes",
 subcat:"eyebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-3-min.jpg?v=1627573657",
 title:"Blend Trend Eyeshadow Brush - 042 Round",
 price:"399",
 rating:"4.4(5)",
@@ -56,7 +56,7 @@ cat:"brushes",
 subcat:"eyebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/Blend-Trend-WBG-images-14_1.jpg?v=1627659982",
 title:"Blend Trend Eyeshadow Brush - 043 Round Xl",
 price:"399",
 rating:"4.8(6)",
@@ -64,7 +64,7 @@ cat:"brushes",
 subcat:"eyebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFoundationBrush-052Kabuki.jpg?v=1627573664",
 title:"Blend Trend Foundation Brush - 052 Kabuki",
 price:"399",
 rating:"4.8(26)",
@@ -72,7 +72,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-001Blush.jpg?v=1627659984",
 title:"Blend Trend Face Brush - 001 Blush",
 price:"399",
 rating:"4.9(15)",
@@ -80,7 +80,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-007Powder.jpg?v=1627660008",
 title:"Blend Trend Face Brush - 007 Powder",
 price:"399",
 rating:"4.9(24)",
@@ -88,7 +88,7 @@ cat:"brushes",
 subcat:"facebrush",
 },
 {
-image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
+img:"https://cdn.shopify.com/s/files/1/0906/2558/products/BeginnersEssentialsCombo3-WBGimages.jpg?v=1630683820",
 title:"Face Essentials Combo",
 price:"1499",
 rating:"5.0(1)",
@@ -162,7 +162,7 @@ function display (data){
 
 
          let img=document.createElement("img")
-         img.src=element.image;
+         img.src=element.img;
  
          let title=document.createElement("h3")
          title.innerHTML=element.title;
