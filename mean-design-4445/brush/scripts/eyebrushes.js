@@ -106,7 +106,15 @@ let eyebrush = brushdata.filter(filterByID);
     }
   }
 
-
+  let datauser=JSON.parse(localStorage.getItem("Orderlist")) || []
+  function addtocart(naam){
+  for(let i=0;i<datauser.length;i++){
+     if(datauser[i].name===naam){
+        return false
+     }
+  }return true
+     
+  }
 
 
 
@@ -168,6 +176,18 @@ function display (data){
          rating.innerHTML=`<img style="width:18px;"src="https://in.sugarcosmetics.com/star_filled.png" ${ element.rating}alt="">${ element.rating}`;
          rating.style.color="grey"; 
          div.append(img,title,price,rating,gap)
+         div.addEventListener("click",function(){
+            if(addtocart(element.title)==true){
+               datauser.push(element)
+               localStorage.setItem("Orderlist" , JSON.stringify(datauser));
+               alert("Item Added Successfully");
+               location.href="/Makeup/addtocart.html";
+           }else{
+               alert("Item Already Added");
+               location.href="/Makeup/addtocart.html";
+           }
+            
+         })
          container.append(div)
      })
    }

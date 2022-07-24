@@ -1,4 +1,4 @@
-console.log("hi");
+// console.log("hi");
 brushdata=[
 {
 image:"https://cdn.shopify.com/s/files/1/0906/2558/products/BlendTrendFaceBrush-006Highlighter.jpg?v=1627660002",
@@ -97,7 +97,15 @@ cat:"brushes",
 },
 ]
 
-
+let datauser=JSON.parse(localStorage.getItem("Orderlist")) || []
+ function addtocart(naam){
+ for(let i=0;i<datauser.length;i++){
+    if(datauser[i].name===naam){
+       return false
+    }
+ }return true
+    
+ }
 function display (data){
     let container= document.getElementById("container")
      data.forEach(function(element){
@@ -156,6 +164,18 @@ function display (data){
          rating.style.color="grey"; 
 
          div.append(img,title,price,rating,gap)
+         div.addEventListener("click",function(){
+            if(addtocart(element.title)==true){
+               datauser.push(element)
+               localStorage.setItem("Orderlist" , JSON.stringify(datauser));
+               alert("Item Added Successfully");
+               location.href="/Makeup/addtocart.html";
+           }else{
+               alert("Item Already Added");
+               location.href="/Makeup/addtocart.html";
+           }
+            
+         })
  
          container.append(div)
  
