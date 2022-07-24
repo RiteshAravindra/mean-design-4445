@@ -71,7 +71,7 @@ let data = [
          div1.setAttribute("class","div1")
          div1.append(sym,btn)
  
-         
+        
  
          div.append(img,title,price,divrat,div1)
              
@@ -80,10 +80,10 @@ let data = [
             datauser.push(element)
             localStorage.setItem("Orderlist" , JSON.stringify(datauser));
             alert("Item Added Successfully");
-            window.location.href="Addtocart.html";
+            window.location.href="/Makeup/addtocart.html";
         }else{
             alert("Item Already Added");
-            window.location.href="Addtocart.html";
+            window.location.href="/Makeup/addtocart.html";
         }
          
       })

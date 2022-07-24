@@ -128,7 +128,7 @@ function append(data){
         div.addEventListener("click", function(){
           // console.log(el)
           localStorage.setItem("product",JSON.stringify(el))
-          window.location.href="product.html"
+          location.href="/Makeup/addtocart.html";
         })
         div.style.cursor="pointer"
         
