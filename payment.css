@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#header{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    width:100%;
+    position: sticky;
+    top: 0;
+    z-index:100;
+}
+#header>div{
+    width: fit-content;
+    margin:auto;
+    padding: 12px;
+    
+}
+#header>div>a>img{
+    width: 400px;
+    
+    
+}
+body{
+    background-color: #f3f3f3;
+    position: relative;
+}
+#body{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    gap: 30px;
+margin-top: 30px;
+}
+#container{
+    width: fit-content;
+}
+#topdiv{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#topdiv>div{
+    display: flex ;
+}
+#topdiv>div:first-child{
+    justify-content: space-between;
+    padding: 20px 25px;
+}
+#topdiv>div:last-child{
+    padding: 0px 0px 20px 25px;
+}
+#topdiv>div>a{
+    text-decoration: none;
+    color: black;
+}
+form{
+    background-color: white;
+    margin-top: 20px;
+    padding:20px 0px 20px 20px ;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.input>input{
+    margin-top:30px;
+    padding: 15px;
+    width: 250px;
+    border: none;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+}
+.input>select{
+    margin-top:30px;
+    padding: 15px;
+    width: 280px;
+    border: none;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+}
+form>div:last-child>input{
+  margin-left: 295px;
+  width: 280px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #333333;
+  color: white;
+}
+#cartdetails{
+    background-color: white;
+    width: 270px;
+    /* position:relative; */
+    padding: 0px 15px 0px 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#cartdetails>div{
+margin-top: 20px;
+line-height: 23px;
+position: relative;
+}
+#cartdetails>div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+#cartdetails>div>p{
+    color: grey;
+}
+#cartdetails>hr{
+    margin-top: 25px;
+}
+#qa{
+padding: 60px 130px;
+margin: auto;
+margin-top: 50px;
+background-color: white;
+}
+#qa>h1{
+    margin-bottom: 20px;
+}
+#qa>div>p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+#end{
+    padding: 40px;
+    border: 1px solid;
+    margin: auto;
+    background-color: #333333;
+    color: white;
+}
+
+#end>div{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
+#end>div>p:first-child{
+    text-decoration: underline;
+}

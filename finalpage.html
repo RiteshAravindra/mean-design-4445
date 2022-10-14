@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        div>label{
+            font-size: 40px;
+        }
+        div{
+            width: fit-content;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            margin: auto;
+            margin-top: 150px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }div>input{
+            width: 250px;
+            height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        div>button{
+            width: 260px;
+            height: 40px;
+            background: #333;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label>Enter OTP</label><br>
+        <input type="text" placeholder="Enter OTP" id="otp"><br>
+        <button>Submit</button>
+    </div>
+</body>
+</html>
+<script>
+    let otp=[{
+        otp:"1234"
+    }]
+    document.querySelector('div>button').addEventListener('click',function(){
+        otp.map(function(elem){
+            let value=document.querySelector('#otp').value
+            if(value==elem.otp){
+                alert("ORDER ACCEPTED. Visit Again Thank you for shopping with us")
+                window.location.href="/index.html"
+            }else{
+                alert("Wrong Otp")
+                
+            }
+        })
+       
+        
+    })
+</script>

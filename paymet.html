@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div id="header">
+        <div>
+            <a href="/index.html"> <img  src="https://media.sugarcosmetics.com/upload/Logo-static.jpg" alt=""></a>
+        </div>
+    </div>
+    <div id="body">
+    <div id="container">
+        <div id="topdiv">
+        <div>
+            <h2>E-MAIL</h2>
+            <a href="login.html">MODIFY</a>
+        </div>
+        <div><p>You are ordering as Coustmer</p></div>
+    </div>
+        <form>
+            <h2>Shipping</h2><br>
+            <p>Enter shipping details</p>
+            <div class="input">
+                <input type="text" placeholder="FIRST NAME">
+                <input type="text" placeholder="LAST NAME">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="C/O (Optional)">
+                <input type="text" placeholder="TELEPHONE">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="STREET ADDRESS">
+                <input type="text" placeholder="ZIP CODE">
+            </div>
+            <div class="input"> 
+                <input type="text" placeholder="CITY                                            ">
+                <select name="" id="">
+                    <option value="rajasthan">STATE</option>
+                    <option value="rajasthan">Rajasthan</option>
+                    <option value="hryana">Hryana</option>
+                    <option value="maharastra">maharastra</option>
+                </select>
+            </div>
+            <div class="input">
+                <input type="submit" value="SHIP TO THIS ADDRESS">
+            </div>
+        </form>
+    </div>
+</div>
+<div id="qa">
+    <h1>Frequently Asked Questions</h1>
+    <div>
+   <p>CAN I DECIDE WHAT TIME I WANT MY PACKAGE TO BE DELIVERED</p>
+   <hr>
+   <p>It is not possible to request a specific time or day for the delivery your order. The courier delivers Monday though Friday during working hours. We suggest you indicate the address where it is easiest for you to be present during the day. We cannot modify your shipping address after the order has been completed.</p>
+</div>
+<div>
+    <p>WHAT HAPPENS IF I AM NOT THERE TO PICK ORDER</p>
+    <hr>
+    <p>The courier will try to deliver the package for three consecutive working days, leaving a note and their contact number. After three delivery attempts the order will be sent back to our warehouse.</p>
+ </div>
+</div>
+<div id="end">
+    <div>
+        <p>Powered by YOOX NET-A-PORTER GROUP </p>
+        <p> - Copyright © 2000-2022 YOOX NET-A-PORTER GROUP S.p.A. - All Rights Reserved - SIAE Licence # 401/I/526</p>
+    </div>
+</div>
+</body>
+</html>
+<script>
+let name1=JSON.parse(localStorage.getItem('clientDetail'))||[]
+
+let btn=document.querySelector('form').addEventListener('submit',myfunction)
+function myfunction(){
+    event.preventDefault()
+    window.location.href="/paymentgateway.html"
+
+}
+</script>

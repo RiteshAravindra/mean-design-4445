@@ -130,7 +130,7 @@ let arr=[]
 
     let b6=document.createElement("div")
     let pro=document.createElement("h3")
-    pro.innerHTML=0
+    pro.innerHTML=699
 
     let inpu=document.createElement("input")
      inpu.value=counter
@@ -139,7 +139,7 @@ let arr=[]
      let b4=document.createElement("div")
      let btnm=document.createElement("button")
      btnm.addEventListener("click",function(){
-         counter--
+         counter--;
          
          if(counter==0){
                       counter=1
@@ -178,7 +178,7 @@ let arr=[]
      
      b4.append(btnm,inpu,btnp)
 
-    //  pro.innerHTML=`${product}`
+    //  pro.innerHTML=`${product}` 
 
      b6.append(pro)
 
@@ -195,7 +195,7 @@ display(arrfromls)
 
 
 
-let tot=99045
+let tot=2097
 
 let st = document.querySelector(".fourteen>h3");
 

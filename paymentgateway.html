@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment gatway</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+form{
+width: fit-content;
+margin: auto;
+padding: 20px;
+margin-top: 200px;
+text-align: center;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+form>input{
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+}
+form>select{
+    width: 308px;
+    height: 30px;
+    margin-top: 20px;
+}
+form>input:last-child{
+    width: 308px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333;
+    margin-top: 30px;
+    cursor: pointer;
+}
+form>label{
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif ;
+}
+    </style>
+</head>
+<body>
+    <form>
+        <label for="">CARD DETAILS</label><br>
+        <input type="number" placeholder="CARD NUMBER" id="card"><br>
+        <input type="password"  placeholder="CVV" id="cvv"><br>
+        <input type="date" placeholder="E"><br>
+        <input type="text" placeholder="NAME" id="name"><br>
+        <select name=""><br>
+            <option value="">SELECT COUNTRY</option>
+            <option value="india">INDIA</option>
+            <option value="america">U.S.A.</option>
+        </select><br>
+        <input type="submit" value="SEND OTP" id="submit">
+    </form>
+</body>
+</html>
+
+<script>
+    let card1=[
+        {
+            card_number:"1111222233334444",
+            cvv:"123",
+            name:"yoox",
+            country:"india"
+        }
+    ]
+    
+        document.querySelector('form').addEventListener('submit',payment)
+        function payment(){
+            event.preventDefault()
+            let card=document.querySelector('#card').value
+            let cvv=document.querySelector('#cvv').value
+            let name=document.querySelector('#name').value
+           card1.map(function(elem){
+            if(card===elem.card_number){
+               if(cvv==elem.cvv){
+                    if(name===elem.name){
+                        alert("ENTER OTP")
+                        window.location.href="finalpage.html"
+                    }else{
+                        alert('Wrong Name')
+                    }
+               }else{
+                alert('Wrong Cvv')
+               }
+            }else{
+                alert('Wrong Card Number')
+            }
+           })
+        }
+
+         
+</script>
