@@ -161,6 +161,10 @@
 
 <script>
   let form= document.querySelector("#form1");
+
+  // document.querySelector("form1").addEventListener("submit",myfun)
+
+
   let userdata=JSON.parse(localStorage.getItem("userdata"))|| []
   form.addEventListener("submit",function(){
      event.preventDefault()
@@ -174,6 +178,7 @@
    if(checkemail(data.email)==true){
      userdata.push(data);
      localStorage.setItem("userdata",JSON.stringify(userdata));
+
    }
    else{
      alert("Account already exists");
@@ -201,7 +206,17 @@
      }
   }
 
-
+function checkEmail(email){
+    let filtered = userdata.filter(function(element){
+        return email === element.email;
+    })
+    if(filtered.length>0){
+    return false;
+}
+else{
+    return true;
+}
+}
 
 
 
@@ -248,4 +263,49 @@
          return true;
      }
   }
+
+
+
+
+
+
+
+
+//   function myfun(event){
+//     event.preventDefault()
+//      let clientData = {
+//          firstName:document.querySelector("#firstName").value,
+//          lastName:document.querySelector("#lastName").value,
+//          email:document.querySelector("#email").value,
+//          password:document.querySelector("#password").value,
+//          gender:document.querySelector("#gender").value,
+//          dateOfBirth:document.querySelector("#date").value
+//      }
+//     if(checkEmail(clientData.email) === true){
+//         clientArr.push(clientData)
+//       localStorage.setItem("clientDetail",JSON.stringify(clientArr))
+//       alert("signup succesful")
+//       window.location.href = "login.html"
+//     }
+//     else{
+//         alert("account already exists")
+//     }
+
+// }
+
+
+
+// function checkEmail(email){
+//     let filtered = clientArr.filter(function(element){
+//         return email === element.email;
+//     })
+//     if(filtered.length>0){
+//     return false;
+// }
+// else{
+//     return true;
+// }
+// }
  </script>
+
+ 
