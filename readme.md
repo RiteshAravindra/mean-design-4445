@@ -2,7 +2,7 @@
  
 
 # Sugarcosmatics.com-Clone
-A web Application to shop a wide array of beauty  products like liners, brushes and facial products. Sugarcosmatics_clone did this by using HTML, CSS, Javascript . I tried to clone it exactly like real Yoox website.
+A web Application to shop a wide array of beauty  products like liners, brushes and facial products. Sugarcosmatics_clone did this by using HTML, CSS, Javascript . We tried to clone it exactly like real Sugarcosmatic website.
 
 This was a group project executed within 5 days of span.
 
