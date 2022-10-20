@@ -90,7 +90,7 @@ function display(arrfromls){
 
    let container= document.querySelector("#four")
    container.innerHTML=""
-let arr=[]
+   let arr=[]
    arrfromls.forEach(function(element){
     let counter=1
     let sum=0
@@ -116,12 +116,16 @@ let arr=[]
 
     let qlabel=document.createElement("label")
     qlabel.innerHTML="Quantity"
+   
 
     
 
 
     let b5=document.createElement("div")
+
     let btnr=document.createElement("button")
+
+   
     btnr.innerHTML="REMOVE"
     btnr.addEventListener("click",function(){
 
@@ -134,7 +138,7 @@ let arr=[]
 
     let inpu=document.createElement("input")
      inpu.value=counter
-     
+     inpu.style.textAlign="center";
 
      let b4=document.createElement("div")
      let btnm=document.createElement("button")
