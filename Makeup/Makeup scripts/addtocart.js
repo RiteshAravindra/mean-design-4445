@@ -81,17 +81,17 @@
 // displayUserData(getdatafromLS);
 // }
 
-
+let st = document.querySelector(".fourteen>h3");
 let arrfromls =JSON.parse(localStorage.getItem("Orderlist"))
-
+let tot;
 
 
 function display(arrfromls){
-
+    tot=0;
    let container= document.querySelector("#four")
    container.innerHTML=""
 let arr=[]
-   arrfromls.forEach(function(element){
+   arrfromls.forEach(function(element,index){
     let counter=1
     let sum=0
     let product;
@@ -124,13 +124,15 @@ let arr=[]
     let btnr=document.createElement("button")
     btnr.innerHTML="REMOVE"
     btnr.addEventListener("click",function(){
-
+      removedata(index)
     })
     b5.append(btnr)
 
     let b6=document.createElement("div")
     let pro=document.createElement("h3")
-    pro.innerHTML=0
+    pro.innerHTML=+element.price;
+    tot+=+element.price;
+    updatetotal(tot)
 
     let inpu=document.createElement("input")
      inpu.value=counter
@@ -147,6 +149,8 @@ let arr=[]
              console.log(counter)
              inpu.value=counter
               product=counter * Number(element.price)
+              tot+=product;
+              updatetotal(tot)
               console.log(product)
               pro.innerHTML=product
               arr.push(product)
@@ -161,8 +165,10 @@ let arr=[]
          inpu.value=counter
          console.log(counter)
          product=counter * Number(element.price)
+         tot+=product;
+         updatetotal(tot)
          console.log(product)
-         pro.innerHTML=product
+         pro.innerHTML=product;
 
          
        
@@ -195,20 +201,17 @@ display(arrfromls)
 
 
 
-let tot=99045
-
-let st = document.querySelector(".fourteen>h3");
-
-st.innerHTML= `${tot}`
 
 
 
-function removedata(naam){
-      let deleted=getdatafromLS.filter(function(ele){
-        return ele.name!==naam;
-       })   
-     console.log(deleted)
-      getdatafromLS=deleted
-      localStorage.setItem("Orderlist" , JSON.stringify(getdatafromLS));
-     displayUserData(getdatafromLS);
+function updatetotal(totalprice){
+   st.innerHTML= `${tot}`
+}
+updatetotal(tot)
+
+
+
+function removedata(i){
+   arrfromls.splice(i,1);
+   display(arrfromls);
      }
