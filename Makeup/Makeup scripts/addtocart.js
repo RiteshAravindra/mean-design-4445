@@ -82,16 +82,159 @@
 // }
 
 
-let arrfromls =JSON.parse(localStorage.getItem("Orderlist"))
+// let arrfromls =JSON.parse(localStorage.getItem("Orderlist"))
 
+
+
+// function display(arrfromls){
+
+//    let container= document.querySelector("#four")
+//    container.innerHTML=""
+//    let arr=[]
+//    arrfromls.forEach(function(element){
+//     let counter=1
+//     let sum=0
+//     let product;
+//     let box = document.createElement("div")
+
+//     let b1=document.createElement("div")
+//     let img= document.createElement("img")
+//     img.src=element.img;
+//     img.style.width="50px"
+//     b1.append(img)
+    
+    
+//     let b2=document.createElement("div")
+//     let tit= document.createElement("h3")
+//     tit.innerHTML=element.title;
+//     b2.append(tit)
+
+//     let b3=document.createElement("div")
+//     let pri =document.createElement("h3")
+//     pri.innerHTML= element.price
+//     b3.append(pri)
+
+//     let qlabel=document.createElement("label")
+//     qlabel.innerHTML="Quantity"
+   
+
+    
+
+
+//     let b5=document.createElement("div")
+
+//     let btnr=document.createElement("button")
+
+   
+//     btnr.innerHTML="REMOVE"
+//     btnr.addEventListener("click",function(){
+
+//     })
+//     b5.append(btnr)
+
+//     let b6=document.createElement("div")
+//     let pro=document.createElement("h3")
+//     pro.innerHTML=699
+
+//     let inpu=document.createElement("input")
+//      inpu.value=counter
+//      inpu.style.textAlign="center";
+
+//      let b4=document.createElement("div")
+//      let btnm=document.createElement("button")
+//      btnm.addEventListener("click",function(){
+//          counter--;
+         
+//          if(counter==0){
+//                       counter=1
+//              }
+//              console.log(counter)
+//              inpu.value=counter
+//               product=counter * Number(element.price)
+//               console.log(product)
+//               pro.innerHTML=product
+//               arr.push(product)
+//               console.log(arr)
+              
+//      })
+//      btnm.innerHTML="-"
+     
+//      let btnp=document.createElement("button")
+//      btnp.addEventListener("click",function(){
+//          counter++
+//          inpu.value=counter
+//          console.log(counter)
+//          product=counter * Number(element.price)
+//          console.log(product)
+//          pro.innerHTML=product
+
+         
+       
+        
+//      })
+
+
+    
+//      btnp.innerHTML="+"
+     
+     
+     
+     
+//      b4.append(btnm,inpu,btnp)
+
+//     //  pro.innerHTML=`${product}` 
+
+//      b6.append(pro)
+
+    
+
+//     box.append(b1,b2,b3,qlabel,b4,b5,b6)
+//     container.append(box)
+
+//    })
+// }
+
+
+// display(arrfromls)
+
+
+
+// let tot=2097
+
+// let st = document.querySelector(".fourteen>h3");
+
+// st.innerHTML= `${tot}`
+
+
+
+// function removedata(naam){
+//       let deleted=getdatafromLS.filter(function(ele){
+//         return ele.name!==naam;
+//        })   
+//      console.log(deleted)
+//       getdatafromLS=deleted
+//       localStorage.setItem("Orderlist" , JSON.stringify(getdatafromLS));
+//      displayUserData(getdatafromLS);
+//      }
+
+
+
+// ==============================================================================
+
+
+
+
+let st = document.querySelector(".fourteen>h3");
+let arrfromls =JSON.parse(localStorage.getItem("Orderlist"))
+let tot;
 
 
 function display(arrfromls){
-
+    tot=0;
    let container= document.querySelector("#four")
    container.innerHTML=""
-   let arr=[]
-   arrfromls.forEach(function(element){
+let arr=[]
+   arrfromls.forEach(function(element,index){
     let counter=1
     let sum=0
     let product;
@@ -128,13 +271,14 @@ function display(arrfromls){
    
     btnr.innerHTML="REMOVE"
     btnr.addEventListener("click",function(){
-
+      removedata(index)
     })
     b5.append(btnr)
 
     let b6=document.createElement("div")
     let pro=document.createElement("h3")
-    pro.innerHTML=699
+    pro.innerHTML=+element.price
+    tot+=+element.price
 
     let inpu=document.createElement("input")
      inpu.value=counter
@@ -151,6 +295,8 @@ function display(arrfromls){
              console.log(counter)
              inpu.value=counter
               product=counter * Number(element.price)
+              tot+=product;
+              updatetotal(tot)
               console.log(product)
               pro.innerHTML=product
               arr.push(product)
@@ -165,11 +311,11 @@ function display(arrfromls){
          inpu.value=counter
          console.log(counter)
          product=counter * Number(element.price)
+         tot+=product;
+         updatetotal(tot)
          console.log(product)
-         pro.innerHTML=product
-
-         
-       
+        
+         pro.innerHTML=product;
         
      })
 
@@ -199,20 +345,19 @@ display(arrfromls)
 
 
 
-let tot=2097
-
-let st = document.querySelector(".fourteen>h3");
-
-st.innerHTML= `${tot}`
 
 
 
-function removedata(naam){
-      let deleted=getdatafromLS.filter(function(ele){
-        return ele.name!==naam;
-       })   
-     console.log(deleted)
-      getdatafromLS=deleted
-      localStorage.setItem("Orderlist" , JSON.stringify(getdatafromLS));
-     displayUserData(getdatafromLS);
+function updatetotal(totalprice){
+   st.innerHTML= `${tot}`
+   console.log(tot)
+}
+updatetotal(tot)
+
+
+
+function removedata(i){
+   arrfromls.splice(i,1);
+   localStorage.setItem("Orderlist",JSON.stringify(arrfromls));
+   display(arrfromls);
      }
