@@ -140,14 +140,14 @@
       <input id="email" type="email" placeholder="Email">
       <input id="password" type="password" placeholder="Password">
 
-      <button> Sign in</button>
+      <button> Sign up</button>
     </form>
     <p id="or">or</p>
     <form id="form2">
       <input id="number" type="number" placeholder="Mobile Number">
       <p id="term">By proceeding you agree to our <span><a href="">Terms of Service</a>& <a href="">Privacy
             Policy.</a></span></p>
-      <button id="button2"> Sign in</button>
+      <button id="button2"> Sign up</button>
       <p id="login"> Already registered? <a href="login.html">Login</a></p>
     </form>
 
@@ -178,6 +178,7 @@
    if(checkemail(data.email)==true){
      userdata.push(data);
      localStorage.setItem("userdata",JSON.stringify(userdata));
+     alert("Account sucessfully created");
 
    }
    else{
