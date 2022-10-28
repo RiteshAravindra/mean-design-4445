@@ -1,3 +1,10 @@
+
+// let uemail=localStorage.getItem("userdata");
+// const mp =uemail.map(x => x))
+
+// console.log(mp)
+
+
 // Banner js start
 let slideimg = [
     "https://d32baadbbpueqt.cloudfront.net/Homepage/eedba493-c795-435f-b323-a026045a571b.gif",

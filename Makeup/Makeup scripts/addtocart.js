@@ -225,12 +225,13 @@
 
 
 let st = document.querySelector(".fourteen>h3");
+let st1 = document.querySelector("#fourteen1>h3");
 let arrfromls =JSON.parse(localStorage.getItem("Orderlist"))
-let tot;
+let tot=0;
 
 
 function display(arrfromls){
-    tot=0;
+   //  tot=0;
    let container= document.querySelector("#four")
    container.innerHTML=""
 let arr=[]
@@ -294,8 +295,9 @@ let arr=[]
              }
              console.log(counter)
              inpu.value=counter
-              product=counter * Number(element.price)
-              tot+=product;
+             product=counter * Number(element.price)
+            //  tot=0
+              tot=Math.abs(tot-Number(element.price));
               updatetotal(tot)
               console.log(product)
               pro.innerHTML=product
@@ -311,7 +313,8 @@ let arr=[]
          inpu.value=counter
          console.log(counter)
          product=counter * Number(element.price)
-         tot+=product;
+         // tot=0;
+         tot+=Number(element.price);
          updatetotal(tot)
          console.log(product)
         
@@ -350,6 +353,7 @@ display(arrfromls)
 
 function updatetotal(totalprice){
    st.innerHTML= `${tot}`
+   st1.innerHTML= `${tot}`
    console.log(tot)
 }
 updatetotal(tot)
