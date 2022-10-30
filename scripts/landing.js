@@ -1388,3 +1388,10 @@ function explore() {
 explore();
 
 // explore section ends
+
+//append
+let userdatals=JSON.parse(localStorage.getItem("login"));
+if(userdatals.length>0){
+ let hide=document.getElementById("reg");
+ hide.innerHTML=userdatals[userdatals.length-1].email;
+}
