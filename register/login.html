@@ -141,7 +141,8 @@ white;
           password:form.password.value
       }
       if(checklogin(data.email,data.password)==true){
-         localStorage.setItem("login",JSON.stringify(data));
+        userdata.push(data);
+         localStorage.setItem("login",JSON.stringify(userdata));
          alert("Login Successfully");
          window.location.href = '/index.html';
       } else{

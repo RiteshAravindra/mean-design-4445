@@ -1390,6 +1390,17 @@ explore();
 // explore section ends
 
 //append
+// let userdatails=JSON.parse(localStorage.getItem("login"));
+// console.log("outside");
+// console.log(userdatails);
+// if(userdatails.length>0){
+//   console.log(userdatails);
+//  let hide=document.getElementById("reg");
+//  console.log("tyt");
+//  hide.innerHTML=userdatails[userdatails.length-1].email;
+// }
+let hide=document.getElementById("reg");
+console.log(hide);
 let userdatals=JSON.parse(localStorage.getItem("login"));
 if(userdatals.length>0){
  let hide=document.getElementById("reg");
