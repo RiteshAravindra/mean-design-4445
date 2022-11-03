@@ -104,10 +104,10 @@ function display (data){
           datauser.push(element)
           localStorage.setItem("Orderlist" , JSON.stringify(datauser));
           alert("Item Added Successfully");
-          location.href="/Makeup/addtocart.html";
+          // location.href="/Makeup/addtocart.html";
       }else{
           alert("Item Already Added");
-          location.href="/Makeup/addtocart.html";
+          // location.href="/Makeup/addtocart.html";
       }
        
     })
