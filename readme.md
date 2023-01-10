@@ -1,7 +1,7 @@
 <h1>Suger Cosmetics - Clone </h1>
 
 
-![Untitled](https://user-images.githubusercontent.com/106387298/208611089-a2e23e3b-9c9f-4c9c-b733-1cbe5bf3e3ba.png)
+![Sugar Cosmetics](https://user-images.githubusercontent.com/106386112/211603700-56cb5051-df07-46ca-ab54-60aa5d020ac2.png)
 
 
 SUGAR Cosmetics is an Indian e-commerce company, founded by Vineeta Singh (Co-founder and CEO) and Kaushik Mukherjee (Co-founder and COO) in 2015, with its headquarters in Mumbai. It focuses on selling makeup and skincare products that are millennial friendly, best suited for Indian skin tones and are cruelty-free. 
