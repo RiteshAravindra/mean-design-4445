@@ -1,76 +1,36 @@
-## mean-design-4445
- 
+<h1>Suger Cosmetics - Clone </h1>
 
-# Sugarcosmatics.com-Clone
-A web Application to shop a wide array of beauty  products like liners, brushes and facial products. Sugarcosmatics_clone did this by using HTML, CSS, Javascript . We tried to clone it exactly like real Sugarcosmatic website.
+![Untitled](https://user-images.githubusercontent.com/106387298/208611089-a2e23e3b-9c9f-4c9c-b733-1cbe5bf3e3ba.png)
 
-This was a group project executed within 5 days of span.
+SUGAR Cosmetics is an Indian e-commerce company, founded by Vineeta Singh (Co-founder and CEO) and Kaushik Mukherjee (Co-founder and COO) in 2015, with its headquarters in Mumbai. It focuses on selling makeup and skincare products that are millennial friendly, best suited for Indian skin tones and are cruelty-free. 
 
+<h3>Website Link : https://lustrous-entremet-5aa626.netlify.app/ </h3>
 
-Have a look ⬇️
+<h3>Features:</h3>
 
+~ Navbar, Footer
 
+~ Landing Page
 
-## Tech Stack
+~ Product Pages
 
-**Client:** HTML, CSS, JavaScript
+~ Signup Page & Login Page
 
-**Deploying:** Netlify
-<br>
+~ Proper Cart Functionality
 
-<img src="/images/img1.png" alt="">
+~ Checkout Page
 
-<br>
+<h3>Tech Stack:</h3> 
 
-<img src="/images/img2.png" alt="">
-
-<br>
-<img src="/images/img3.png" alt="">
-
-<br>
-<img src="/images/img4.png" alt="">
-
-<br>
-<img src="/images/img5.png" alt="">
-
-<br>
-<img src="/images/img6.png" alt="">
-
-<br>
-<img src="/images/img7.png" alt="">
-
-<br>
-<img src="/images/img8.png" alt="">
-
-<br>
-<img src="/images/img9.png" alt="">
-
-<br>
-<img src="/images/img10.png" alt="">
-
-<br>
-<img src="/images/img11.png" alt="">
-
-<br>
-<img src="/images/img12.png" alt="">
-
-<br>
+HTML | CSS | JavaScript | DOM
 
 
-##Contributors:
-<!-- ##Manager :  -->
-## @soumya subrat moharana(Manager)
+<h3>Contributors:</h3>
+## @Soumya Subrat Moharana(Manager)
 ## @fw19_0939-Ritesh Aravindra (Team lead)
 ## @fw19_0940-Shekhar Suman
 ## @fw19_0203-Rahul Raosaheb Ohol
 ## @fw17_0897-Sahil
 ## @fw19_1058-Papri Saha
 
-
-
 ## THANK YOU 
-
-
-
-
-
